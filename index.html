@@ -257,14 +257,14 @@
 
   .hero-logo-right {
     position: absolute;
-    right: 6%;
+    right: 4%;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    opacity: 0.12;
+    opacity: 1;
   }
 
-  .hero-logo-right img { width: 480px; height: auto; object-fit: contain; }
+  .hero-logo-right img { width: 600px; height: auto; object-fit: contain; }
 
   .hero-scroll {
     position: absolute;
@@ -896,8 +896,14 @@
   @media (max-width: 900px) {
     nav { padding: 12px 20px; }
     .nav-links { display: none; }
-    .hero-content { padding: 100px 24px 60px; }
-    .hero-logo-right { display: none; }
+    .hero-content { padding: 280px 24px 60px; }
+    .hero-logo-right {
+      right: auto;
+      left: 50%;
+      top: 100px;
+      transform: translateX(-50%);
+    }
+    .hero-logo-right img { width: 200px; }
     .now-playing { padding: 14px 24px; }
     .now-playing-sub { display: none; }
     .about, .genres, .listen, .advertise, .contact { padding: 70px 24px; }
