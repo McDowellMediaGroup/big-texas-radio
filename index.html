@@ -1234,11 +1234,6 @@
       const btn = form.querySelector('.form-submit');
       const label = btn.textContent;
       status.className = 'form-status';
-      if (form.getAttribute('action').includes('xdekeezy')) {
-        status.textContent = 'This form is not connected yet.';
-        status.classList.add('err');
-        return;
-      }
       btn.disabled = true;
       btn.textContent = 'Sending';
       try {
